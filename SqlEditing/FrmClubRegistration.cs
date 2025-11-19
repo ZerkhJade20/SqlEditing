@@ -87,6 +87,7 @@ namespace SqlEditing
                 LastName = txtLastName.Text;
 
                 
+
                 clubRegistrationQuery.RegisterStudent(
                     ID, StudentId, FirstName, MiddleName, LastName, Age, Gender, Program
                 );
