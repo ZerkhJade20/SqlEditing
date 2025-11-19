@@ -34,30 +34,22 @@ namespace SqlEditing
         {
             try
             {
-                // ------------------------------
-                // VALIDATION
-                // ------------------------------
-
-                // Student ID
+                
                 if (string.IsNullOrWhiteSpace(txtStudentID.Text))
                     throw new Exception("Student ID is required.");
 
                 if (!long.TryParse(txtStudentID.Text, out StudentId))
                     throw new Exception("Student ID must be a valid number.");
 
-                // First Name
                 if (string.IsNullOrWhiteSpace(txtFirstName.Text))
                     throw new Exception("First name is required.");
 
-                // Middle Name
                 if (string.IsNullOrWhiteSpace(txtMiddleName.Text))
                     throw new Exception("Middle name is required.");
 
-                // Last Name
                 if (string.IsNullOrWhiteSpace(txtLastName.Text))
                     throw new Exception("Last name is required.");
 
-                // Age
                 if (string.IsNullOrWhiteSpace(txtAge.Text))
                     throw new Exception("Age is required.");
 
@@ -67,27 +59,21 @@ namespace SqlEditing
                 if (Age < 1 || Age > 120)
                     throw new Exception("Age must be between 1 and 120.");
 
-                // Gender
                 if (cmbGender.SelectedIndex == -1)
                     throw new Exception("Please select a Gender.");
 
                 Gender = cmbGender.Text;
 
-                // Program
                 if (cmbProgram.SelectedIndex == -1)
                     throw new Exception("Please select a Program.");
 
-                Program = cmbProgram.Text;
-
-                
+                Program = cmbProgram.Text;                
                 ID = RegistrationID();
 
                 FirstName = txtFirstName.Text;
                 MiddleName = txtMiddleName.Text;
                 LastName = txtLastName.Text;
-
-                
-
+              
                 clubRegistrationQuery.RegisterStudent(
                     ID, StudentId, FirstName, MiddleName, LastName, Age, Gender, Program
                 );

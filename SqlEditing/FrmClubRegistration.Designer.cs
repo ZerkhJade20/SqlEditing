@@ -86,6 +86,57 @@
             // cmbProgram
             // 
             this.cmbProgram.FormattingEnabled = true;
+            this.cmbProgram.Items.AddRange(new object[] {
+            "BS Computer Science",
+            "BS Information Technology",
+            "BS Information Systems",
+            "BS Computer Engineering",
+            "BS Electronics Engineering",
+            "BS Electrical Engineering",
+            "BS Mechanical Engineering",
+            "BS Civil Engineering",
+            "BS Industrial Engineering",
+            "BS Architecture",
+            "BS Accountancy",
+            "BS Accounting Information System",
+            "BS Management Accounting",
+            "BS Business Administration",
+            "BS Entrepreneurship",
+            "BS Criminology",
+            "BS Biology",
+            "BS Chemistry",
+            "BS Physics",
+            "BS Environmental Science",
+            "BS Marine Biology",
+            "BS Psychology",
+            "BS Nursing",
+            "BS Medical Technology",
+            "BS Pharmacy",
+            "BS Radiologic Technology",
+            "BS Physical Therapy",
+            "BS Occupational Therapy",
+            "BS Nutrition and Dietetics",
+            "BS Hospitality Management",
+            "BS Tourism Management",
+            "BS Customs Administration",
+            "BS Social Work",
+            "BS Mathematics",
+            "BS Statistics",
+            "BS Secondary Education",
+            "BS Elementary Education",
+            "BS Early Childhood Education",
+            "BS Special Needs Education",
+            "BS Office Administration",
+            "BS Public Administration",
+            "BS Agriculture",
+            "BS Forestry",
+            "BS Fisheries",
+            "BS Home Economics",
+            "BS Industrial Technology",
+            "BS Electronics Technology",
+            "BS Automotive Technology",
+            "BS Drafting Technology",
+            "BS Midwifery"});
             this.cmbProgram.Location = new System.Drawing.Point(433, 53);
             this.cmbProgram.Name = "cmbProgram";
             this.cmbProgram.Size = new System.Drawing.Size(252, 21);
@@ -93,6 +144,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.cmbGender);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtAge);
@@ -198,6 +250,9 @@
             // cmbGender
             // 
             this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.cmbGender.Location = new System.Drawing.Point(273, 172);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(236, 21);
@@ -205,28 +260,33 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(748, 25);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(189, 63);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(748, 94);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(189, 63);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Tan;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.button3);
@@ -237,13 +297,15 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(12, 268);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(882, 49);
             this.button3.TabIndex = 8;
             this.button3.Text = "Refresh";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
@@ -269,6 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(949, 601);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnUpdate);
